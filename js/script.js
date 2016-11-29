@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('.slider').slider({full_width: true});
+  $('.slider').slider({full_width: true, height: "370px"});
   $('.parallax').parallax();
   $(window).scroll(function(){
     if ($(this).scrollTop() > 200) {
@@ -63,25 +63,25 @@ $(".top").click(function() {
 
 
 
-// $('a[href^="#"]').on('click', function (e) { //scroll on click
-//     e.preventDefault();
-//     $(document).off("scroll");
-//     var target = this.hash,
-//     $target = $(target);
-//     if($target.selector == "#top"){
-//        $('html, body').stop().animate({scrollTop : 0},1000);
-//       //  window.history.pushState(null,null, '#top')
-//       //  $(document).on("scroll", onScroll);
-//     }
-//     else{
-//       $('html, body').stop().animate({
-//           'scrollTop': $target.offset().top
-//       }, 1000, 'swing', function () {
-//           // window.location.hash = target;
-//           // $(document).on("scroll", onScroll);
-//       });
-//     }
-// });
+$('a[href^="#"]').on('click', function (e) { //scroll on click
+    e.preventDefault();
+    $(document).off("scroll");
+    var target = this.hash,
+    $target = $(target);
+    if($target.selector == "#top"){
+       $('html, body').stop().animate({scrollTop : 0},1000);
+      //  window.history.pushState(null,null, '#top')
+      //  $(document).on("scroll", onScroll);
+    }
+    else{
+      $('html, body').stop().animate({
+          'scrollTop': $target.offset().top
+      }, 1000, 'swing', function () {
+          // window.location.hash = target;
+          // $(document).on("scroll", onScroll);
+      });
+    }
+});
 
 // function onScroll(event){       //change url while scrolling
 //     var scrollPos = $(document).scrollTop();
@@ -96,17 +96,17 @@ $(".top").click(function() {
 //     });
 // }
 
-$(window).resize(function(){
-  if ( $(window).width() > 992) {
-    $('nav').addClass('transparent');
-  }
-  else if ($(window).width() < 992){
-    $('nav').removeClass('transparent');
-  }
-})
+// $(window).resize(function(){
+//   if ( $(window).width() > 992) {
+//     $('nav').addClass('transparent');
+//   }
+//   else if ($(window).width() < 992){
+//     $('nav').removeClass('transparent');
+//   }
+// })
 
 if ( $(window).width() > 992) {
-  $('nav').addClass('transparent');
+  //$('nav').addClass('transparent');
   (function() { //scroll to next anchor
     var delay = false;
 

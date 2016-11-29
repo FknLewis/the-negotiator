@@ -9,7 +9,7 @@ input:-webkit-autofill {
 
 html {
   font-family: 'Montserrat', sans-serif;
-	color: #1b1b1b;
+	color: #525252;
 }
 
 nav{
@@ -23,38 +23,55 @@ nav .brand-logo, nav .brand-logo i {
 }
 .next {
 	font-size: 40px;
+	color: #ff5252
 }
 .next:hover, .top:hover{
 	cursor: pointer;
 }
-.parallax-container {
-  height: 40vh;
+.container {
+	width: 80%;
 }
 .container .row {
 	margin: 0;
 }
+.row {
+	margin: 0;
+}
+.slider .indicators .indicator-item.active {
+	background-color: #ff5252;
+}
 
-#para-image-1 {
-	-webkit-filter: blur(2px); /* Chrome, Safari, Opera */
-    filter: grayscale(2px);
+.slider .slides li .caption {
+	top: 25%;
+	left: 0;
+	width: 100%;
+}
+.parallax-container{
+	height: 350px;
+}
+.parallax img {
+	-webkit-filter: brightness(75%); /* Chrome, Safari, Opera */
+    filter: brightness(75%);
+		bottom: 83%;
+		height: 257%;
 }
 
 @media only screen and (min-width: 993px) {
-	#about, #services, #pricing, #contact {
-		height: 100vh;
+	#home, #about, #pricing, #contact {
 		margin: 0;
 		position: relative;
 	}
-	#contact {
-		height: 95vh;
-	}
 }
 
-#about, #services, #pricing, #contact {
+#contact {
+	height: 95vh;
+}
+
+#home, #about, #pricing, #contact {
 	margin-bottom: 0;
 }
 #services a{
-	color: #e64a19;
+	color: #ff5252;
 	text-decoration: underline;
 }
 .ross, .lewis {
@@ -69,6 +86,7 @@ nav .brand-logo, nav .brand-logo i {
 }*/
 .page-head p {
 	text-align: center;
+	color: #525252;
 }
 .page-head {
 	padding-top: 10vh;
@@ -92,13 +110,15 @@ nav .brand-logo, nav .brand-logo i {
 #textarea1 {
 	max-height: 1vh;
 }
+
+
 /* label color */
  .input-field label {
-   color: white;
+   color: #525252;
  }
  /* label focus color */
  .input-field input[type=text]:focus + label, .input-field input[type=email]:focus + label, .input-field input[type=tel]:focus + label , #textarea1:focus + label {
-   color: rgba(0, 0, 0, 0.3);
+   color: #ff5252;
  }
 /* label underline color */
 .input-field input[type=text], .input-field input[type=email], .input-field input[type=tel], #textarea1 {
@@ -106,8 +126,8 @@ nav .brand-logo, nav .brand-logo i {
 }
  /* label underline focus color */
  .input-field input[type=text]:focus, .input-field input[type=email]:focus, .input-field input[type=tel]:focus, #textarea1:focus {
-   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-   box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.3);
+   border-bottom: 1px solid #ff5252;
+   box-shadow: 0 1px 0 0 #ff5252;
  }
  /* valid color */
  .input-field input[type=text].valid, .input-field input[type=email].valid, .input-field input[type=tel].valid, #textarea1.valid{
@@ -121,15 +141,15 @@ nav .brand-logo, nav .brand-logo i {
  }
  /* icon prefix focus color */
  .input-field .prefix.active {
-   color: rgba(0, 0, 0, 0.3);
+   color: #ff5252;
  }
 
 p {
   text-align: left;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
+	color: #ff5252 ;
 	font-size: 2.92rem;
 }
 h2 {
@@ -139,9 +159,9 @@ h3 {
 	font-size: 1.64rem;
 }
 h1, h2, h3 {
-  color: #ff5252 ;
   text-align: center;
   font-weight: bold;
+	text-shadow:1px 1px 1px rgba(0, 0, 0, 0.3)
 }
 
 footer.page-footer {
