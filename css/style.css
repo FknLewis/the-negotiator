@@ -1,0 +1,158 @@
+@font-face {
+	font-family: Montserrat;
+	src: url("fonts/Montserrat/Montserrat-Regular.ttf");
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #ff7043 inset !important;
+		-webkit-text-fill-color: white !important;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+	color: #1b1b1b;
+}
+
+nav{
+  position: fixed;
+  font-weight: bold;
+  z-index: 999;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+nav .brand-logo, nav .brand-logo i {
+	font-size: 2.5rem;
+}
+.next {
+	font-size: 40px;
+}
+.next:hover, .top:hover{
+	cursor: pointer;
+}
+.parallax-container {
+  height: 40vh;
+}
+.container .row {
+	margin: 0;
+}
+
+#para-image-1 {
+	-webkit-filter: blur(2px); /* Chrome, Safari, Opera */
+    filter: grayscale(2px);
+}
+
+@media only screen and (min-width: 993px) {
+	#about, #services, #pricing, #contact {
+		height: 100vh;
+		margin: 0;
+		position: relative;
+	}
+	#contact {
+		height: 95vh;
+	}
+}
+
+#about, #services, #pricing, #contact {
+	margin-bottom: 0;
+}
+#services a{
+	color: #e64a19;
+	text-decoration: underline;
+}
+.ross, .lewis {
+	height: 30vh;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	border: 2vh solid white;
+	border-radius: 50%;
+}
+/*#about-us, #ross, #lewis, #ross-header, #ross-text, #lewis-header, #lewis-text {
+	opacity: 0;
+}*/
+.page-head p {
+	text-align: center;
+}
+.page-head {
+	padding-top: 10vh;
+	color: white;
+}
+.page-middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.iconview {
+	font-size: 13vh;
+}
+/* Form CSS*/
+#contact-form {
+	margin-left: 5vh;
+	margin-right: 5vh;
+}
+#textarea1 {
+	max-height: 1vh;
+}
+/* label color */
+ .input-field label {
+   color: white;
+ }
+ /* label focus color */
+ .input-field input[type=text]:focus + label, .input-field input[type=email]:focus + label, .input-field input[type=tel]:focus + label , #textarea1:focus + label {
+   color: rgba(0, 0, 0, 0.3);
+ }
+/* label underline color */
+.input-field input[type=text], .input-field input[type=email], .input-field input[type=tel], #textarea1 {
+	 border-bottom: 1px solid white;
+}
+ /* label underline focus color */
+ .input-field input[type=text]:focus, .input-field input[type=email]:focus, .input-field input[type=tel]:focus, #textarea1:focus {
+   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+   box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.3);
+ }
+ /* valid color */
+ .input-field input[type=text].valid, .input-field input[type=email].valid, .input-field input[type=tel].valid, #textarea1.valid{
+   border-bottom: 1px solid white;
+   box-shadow: 0 1px 0 0 white;
+ }
+ /* invalid color */
+ .input-field input[type=text].invalid, .input-field input[type=email].invalid, .input-field input[type=tel].invalid, #textarea1.invalid {
+   border-bottom: 1px solid #ff5722;
+   box-shadow: 0 1px 0 0 #ff5722;
+ }
+ /* icon prefix focus color */
+ .input-field .prefix.active {
+   color: rgba(0, 0, 0, 0.3);
+ }
+
+p {
+  text-align: left;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+	font-size: 2.92rem;
+}
+h2 {
+	font-size: 2.2rem;
+}
+h3 {
+	font-size: 1.64rem;
+}
+h1, h2, h3 {
+  color: #ff5252 ;
+  text-align: center;
+  font-weight: bold;
+}
+
+footer.page-footer {
+	overflow: hidden;
+	text-align: center;
+	color: white;
+	margin-top: 0;
+	padding-top: 0;
+	height: 5vh;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+footer .container {
+	line-height: 5vh;
+}
