@@ -104,7 +104,6 @@ $('a[href^="#"]').on('click', function (e) { //scroll on click
 //     $('nav').removeClass('transparent');
 //   }
 // })
-
 if ( $(window).width() > 992) {
   //$('nav').addClass('transparent');
   (function() { //scroll to next anchor
