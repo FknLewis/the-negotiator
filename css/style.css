@@ -13,12 +13,12 @@ html {
 }
 
 nav{
+	z-index: 1;
   position: fixed;
-  z-index: 999;
-	background-color: rgba(255, 82, 82, 1);
+	background-color: #f44336 ;	text-shadow: 1px 3px 0px rgba(0, 0, 0, 0.2)
 }
 nav .container {
-	background-color: #ff5252;
+	background-color: #f44336 ;
 	width: 100%;
 }
 nav ul a{
@@ -27,7 +27,7 @@ nav ul a{
 
 /*.next {
 	font-size: 40px;
-	color: #ff5252
+	color: #f44336
 }*/
 
 .next:hover, .top:hover{
@@ -49,17 +49,21 @@ nav ul a{
 }
 
 .parallax-container {
-	height: 665px;
-	padding-top: 5vh;
+	height: 50vh;
 }
 .parallax {
 	height: 100%;
+	background-color: #f44336 ;
 }
-
+.parallax-container .container {
+	position: fixed;
+	margin-left: 10%;
+	margin-right: 10%;
+	z-index: -1;
+}
 .parallax img {
 	-webkit-filter: brightness(95%); /* Chrome, Safari, Opera */
     filter: brightness(95%);
-		height: 150%;
 }
 
 .container .banner {
@@ -69,11 +73,8 @@ nav ul a{
 
 .negotiator {
 	background-image: url("../images/the-negotiator.png");
-	background-size: 125%;
-	background-repeat: no-repeat;
-	background-position: 50% 0%;
-	height: 100%;
-	margin-top: 7vh;
+	background-size: cover;
+	height: 50%;
 }
 
 #home, #about, #testimonials, #contact {
@@ -81,9 +82,10 @@ nav ul a{
 	padding-bottom: 5vh;
 }
 #about a{
-	color: #ff5252;
+	color: #f44336 ;
 	text-decoration: underline;
 }
+
 
 .page-head p {
 	text-align: center;
@@ -113,23 +115,24 @@ p {
 
 .banner h1 {
 	color: white;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2)
+	text-shadow: 1px 3px 0px rgba(0, 0, 0, 0.2);
+	text-align: left;
 }
 }
 #home h1{
 	color: #525252;
 }
-h1 {
-	font-size: 2.5rem;
-}
+
 h2{
 	font-size: 2rem;
 }
 .banner h2{
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+	text-shadow: 1px 3px 0px rgba(0, 0, 0, 0.2);
+	text-align: left;
+	color: white;
 }
 h1, h2, h3 {
-	color: #ff5252 ;
+	color: #f44336  ;
   text-align: center;
 }
 h3{
@@ -154,7 +157,7 @@ form {
 }
 /* label focus color */
 .input-field input[type=text]:focus + label, .input-field input[type=email]:focus + label, .input-field input[type=tel]:focus + label , #textarea1:focus + label {
-	color: #ff5252;
+	color: #f44336 ;
 }
 /* label underline color */
 .input-field input[type=text], .input-field input[type=email], .input-field input[type=tel], #textarea1 {
@@ -162,8 +165,8 @@ form {
 }
 /* label underline focus color */
 .input-field input[type=text]:focus, .input-field input[type=email]:focus, .input-field input[type=tel]:focus, #textarea1:focus {
-	border-bottom: 1px solid #ff5252;
-	box-shadow: 0 1px 0 0 #ff5252;
+	border-bottom: 1px solid #f44336 ;
+	box-shadow: 0 1px 0 0 #f44336 ;
 }
 /* valid color */
 .input-field input[type=text].valid, .input-field input[type=email].valid, .input-field input[type=tel].valid, #textarea1.valid{
@@ -177,7 +180,7 @@ form {
 }
 /* icon prefix focus color */
 .input-field .prefix.active {
-	color: #ff5252;
+	color: #f44336 ;
 }
 
 /*footer*/
@@ -193,123 +196,4 @@ footer.page-footer {
 }
 footer .container {
 	line-height: 5vh;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (min-width: 993px) { /* Large */
-	#home, #about, #pricing, #contact {
-		margin: 0;
-		position: relative;
-	}
-	h1 {
-		font-size: 4.2rem;
-	}
-	nav{
-		height: 5vh;
-		line-height: 5vh;
-	}
-	.container .banner {
-		padding-top: 3vh;
-	}
-	.negotiator {
-		height: 100%;
-		margin-top: 3vh;
-	}
-	.parallax-container {
-		height: 45vh;
-		padding-top: 0;
-	}
-	.parallax img {
-			bottom: 83%;
-			height: 257%;
-	}
-	.page-head {
-		padding-top: 3vh;
-	}
-}
-/* iPad Portrait and Landscape */
-@media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-		nav  .brand-logo, nav .brand-logo i{
-			left: 1vh;
-			-webkit-transform:translateX(0%);
-			transform:translateX(0%);
-			font-size: 2.5rem;
-			font-weight: bold;
-		}
-}
-
-/* iPad Portrait */
-@media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (orientation: portrait) {
-		.container .banner {
-			padding-top: 5vh;
-		}
-		.parallax-container {
-			height: 32vh;
-			padding-top: 0;
-		}
-		.negotiator {
-			margin-top: 3vh;
-			background-size: 116%;
-		}
-}
-
-/* iPad Landscape */
-@media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (orientation: landscape) {
-		.container .banner {
-			padding-top: 2vh;
-		}
-		.negotiator{
-			margin-top: 4vh;
-			background-size: 100%;
-			height: 100%;
-		}
-}
-
-/* iPhone 6 Portrait */
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (orientation: portrait) {
-		form .container {
-			width: 90%;
-			margin-left: 0;
-		}
-}
-
-/* iPhone 6 Landscape */
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (orientation: landscape) {
-		form .container {
-			width: 90%;
-			margin-left: 0;
-		}
-		.container .banner {
-			padding-top: 10vh;
-		}
 }

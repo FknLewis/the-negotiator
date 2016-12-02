@@ -13,6 +13,10 @@ $(document).ready(function(){
     $sub.val($(this).val() + " " + "[" + "Pikzl Contact Form" + "]");
   });
 
+  var navheight = $('nav').height();
+  $('#top-parallax').css('padding-top', navheight+'px');
+  $('.page-head').css('padding-top', navheight+'px');
+
 });
 
 // $(".next").click(function() { //next anchor on click
