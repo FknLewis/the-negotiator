@@ -15,22 +15,22 @@ $(document).ready(function(){
 
 });
 
-$(".next").click(function() { //next anchor on click
-  var topPart = $(window).height() - $(window).height()/100*10;
-  var a= document.getElementsByTagName('anchor');
-  for(var i = 0 ; i < a.length ; i++) {
-    var t = a[i].getClientRects()[0].top;
-    if(t >= 40){
-        foundAnchor = true;
-     break;
-    }
-  }
-  if(foundAnchor){
-      $('html,body').stop().animate({
-        scrollTop: a[i].offsetTop
-      },1000);
-  }
-});
+// $(".next").click(function() { //next anchor on click
+//   var topPart = $(window).height() - $(window).height()/100*10;
+//   var a= document.getElementsByTagName('anchor');
+//   for(var i = 0 ; i < a.length ; i++) {
+//     var t = a[i].getClientRects()[0].top;
+//     if(t >= 40){
+//         foundAnchor = true;
+//      break;
+//     }
+//   }
+//   if(foundAnchor){
+//       $('html,body').stop().animate({
+//         scrollTop: a[i].offsetTop
+//       },1000);
+//   }
+// });
 
 $(".top").click(function() {
   $('html, body').stop().animate({scrollTop : 0},1000);

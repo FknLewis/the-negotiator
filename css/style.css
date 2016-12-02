@@ -17,18 +17,19 @@ nav{
   z-index: 999;
 	background-color: rgba(255, 82, 82, 1);
 }
-nav .brand-logo, nav .brand-logo i {
-	font-size: 2.5rem;
-	font-weight: bold;
+nav .container {
+	background-color: #ff5252;
+	width: 100%;
 }
 nav ul a{
 	font-size: 1.3rem;
 }
-}
-.next {
+
+/*.next {
 	font-size: 40px;
 	color: #ff5252
-}
+}*/
+
 .next:hover, .top:hover{
 	cursor: pointer;
 }
@@ -40,9 +41,6 @@ nav ul a{
 .row {
 	margin: 0;
 }
-.slider .indicators .indicator-item.active {
-	background-color: #ff5252;
-}
 
 .slider .slides li .caption {
 	top: 25%;
@@ -51,7 +49,7 @@ nav ul a{
 }
 
 .parallax-container {
-	height: 100%;
+	height: 665px;
 	padding-top: 5vh;
 }
 .parallax {
@@ -67,14 +65,15 @@ nav ul a{
 .container .banner {
 	color: white;
 	height: 100%;
-	padding-top: 3vh;
 }
 
 .negotiator {
 	background-image: url("../images/the-negotiator.png");
-	background-size: 90%;
+	background-size: 125%;
 	background-repeat: no-repeat;
+	background-position: 50% 0%;
 	height: 100%;
+	margin-top: 7vh;
 }
 
 #home, #about, #testimonials, #contact {
@@ -85,9 +84,7 @@ nav ul a{
 	color: #ff5252;
 	text-decoration: underline;
 }
-.active {
-	background-color: rgba(0,0,0,0.1);
-}
+
 .page-head p {
 	text-align: center;
 	color: #525252;
@@ -101,9 +98,6 @@ nav ul a{
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-}
-.iconview {
-	font-size: 13vh;
 }
 
 p {
@@ -125,7 +119,9 @@ p {
 #home h1{
 	color: #525252;
 }
-
+h1 {
+	font-size: 2.5rem;
+}
 h2{
 	font-size: 2rem;
 }
@@ -220,13 +216,19 @@ footer .container {
 		margin: 0;
 		position: relative;
 	}
-
+	h1 {
+		font-size: 4.2rem;
+	}
 	nav{
 		height: 5vh;
 		line-height: 5vh;
 	}
+	.container .banner {
+		padding-top: 3vh;
+	}
 	.negotiator {
 		height: 100%;
+		margin-top: 3vh;
 	}
 	.parallax-container {
 		height: 45vh;
@@ -240,6 +242,19 @@ footer .container {
 		padding-top: 3vh;
 	}
 }
+/* iPad Portrait and Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+		nav  .brand-logo, nav .brand-logo i{
+			left: 1vh;
+			-webkit-transform:translateX(0%);
+			transform:translateX(0%);
+			font-size: 2.5rem;
+			font-weight: bold;
+		}
+}
 
 /* iPad Portrait */
 @media only screen
@@ -248,6 +263,10 @@ footer .container {
   and (orientation: portrait) {
 		.container .banner {
 			padding-top: 5vh;
+		}
+		.parallax-container {
+			height: 32vh;
+			padding-top: 0;
 		}
 		.negotiator {
 			margin-top: 3vh;
@@ -281,13 +300,16 @@ footer .container {
 		}
 }
 
-@media only screen and (min-width: 601px) { /* Small */
-	.negotiator {
-		/*height: 100%;*/
-
-	}
-	.parallax-container {
-		height: 45vh;
-		padding-top: 0;
-	}
+/* iPhone 6 Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (orientation: landscape) {
+		form .container {
+			width: 90%;
+			margin-left: 0;
+		}
+		.container .banner {
+			padding-top: 10vh;
+		}
 }
