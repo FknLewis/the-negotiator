@@ -43,13 +43,14 @@
          <div class="parallax"><!--<img src="images/clouds.jpg">--></div>
           <div class="container">
             <div class="row banner">
-              <div class="col s8">
-                <h1>Buying a house or car, or have an ongoing claim or complaint?</h1>
-                <h2>You could be thousands of pounds better off by calling in The Negotiator.</h2>
+              <div>
+                <h1 class="col s12 m8">Buying a house or car, or have an ongoing claim or complaint?</h1>
+                <img src="images/the-negotiator.png" class="col s12 m4">
+                <h2 class="col s12 m8">You could be thousands of pounds better off by calling in The Negotiator.</h2>
               </div>
-              <div class="col s4 negotiator">
+              <!-- <div class="col s12 m4 negotiator">
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -118,7 +119,7 @@
 
         <div class="row">
           <div class="col s12">
-            <h3 style="text-align:left">Complaints</h3>
+            <h3 style="text-align:left">Claims or Complaints</h3>
           </div>
         </div>
         <div class="row">
@@ -140,10 +141,12 @@
           </div>
           <div class="row">
             <div class="col s12" style="text-align:left">
-              <p>I had a dispute with an energy company where they agreed compensation, but I wasn't satisfied with their £750 offer. I got The Negotiator involved and they increased their offer to £2250. It took a few weeks but the extra £1500 was more than worth it! I'd recommend The Negotiator to anyone. (Alan Webster, Glasgow)</p>
+              <p class="testimonial">I had a dispute with an energy company where they agreed compensation, but I wasn't satisfied with their £750 offer. I got The Negotiator involved and they <span class="focus">increased their offer to £2250</span>. It took a few weeks but the extra £1500 was more than worth it! I'd recommend The Negotiator to anyone.</p>
+              <p class="customer">Alan Webster, Glasgow</p>
             </div>
             <div class="col s12" style="text-align:left">
-              <p>I wanted to buy a house which was priced at £195k. After several calls the best price they offered was £192k. I called The Negotiator and two weeks later they settled for £185k. After The Negotiator's fee I walked away £3.5k better off. The house is perfect, and getting it cheaper was the icing on the cake. Thanks to The Negotiator. (Tommy Borkowski, Larkhall).</p>
+              <p class="testimonial">I wanted to buy a house which was priced at £195k. After several calls the best price they offered was £192k. I called The Negotiator and two weeks later they settled for £185k. After The Negotiator's fee I walked away <span class="focus">£3.5k better off</span>. The house is perfect, and getting it cheaper was the icing on the cake. Thanks to The Negotiator.</p>
+              <p class="customer">Tommy Borkowski, Larkhall</p>
             </div>
           </div>
         </div>
@@ -158,16 +161,15 @@
           </div>
         </div>
         <div style="padding-top:5vh">
-          <form name="contactform" method="post" action="https://formspree.io/ross@pikzl.co">
+          <form name="contactform" method="post" action="https://formspree.io/lewis@pikzl.co">
             <div class="container">
-              <input type="hidden" name="_cc" value="lewis@pikzl.co" />
               <input type="hidden" name="_next" value="#contact"/>
-              <input type="hidden" name="_subject" id="_subject" value="Pikzl Contact Form" />
+              <input type="hidden" name="_subject" id="_subject" value="The Negotiator Contact Form" />
               <input type="text" name="_gotcha" style="display:none" />
               <div class="row">
                 <div class="input-field col s12 l6">
                   <i class="material-icons prefix">face</i>
-                  <input id="name" type="text" class="validate" name="Name:" required="" aria-required="true">
+                  <input id="name" type="text" name="Name:" required="" aria-required="true">
                   <label for="name">Name *</label>
                 </div>
                 <div class="input-field col s12 l6">
@@ -180,13 +182,18 @@
               <div class="row">
                 <div class="input-field col s12 l6">
                   <i class="material-icons prefix">phone</i>
-                  <input id="icon_telephone" type="tel" class="validate" name="Telephone:">
+                  <input id="icon_telephone" type="tel" name="Telephone:">
                   <label for="icon_telephone">Phone</label>
                 </div>
                 <div class="input-field col s12 l6">
-                  <i class="material-icons prefix">laptop</i>
-                  <input id="icon_website" type="text" class="validate" name="Website:">
-                  <label for="icon_website">Website</label>
+                  <i class="material-icons prefix">work</i>
+                  <select>
+                    <option value="" disabled selected>Type of Deal..</option>
+                    <option value="1">Car</option>
+                    <option value="2">House</option>
+                    <option value="3">Claim / Complaint</option>
+                    <option value="4">Other</option>
+                  </select>
                 </div>
               </div>
 

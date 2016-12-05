@@ -1,25 +1,23 @@
 $(document).ready(function(){
-  //onescroll();
-  $('.parallax').parallax();
-  $(window).scroll(function(){
-    if ($(this).scrollTop() > 200) {
-    }
-    else {
-    }
-  });
+  /*onescroll();*/ //Enable smooth scroll
+  $('.parallax').parallax();  //initialize parallax
+  $('select').material_select(); //initialize dropdown
 
-  var $sub = $("#_subject"); //subject for email
+/*---Subject for email---*/
+  var $sub = $("#_subject");
   $("#name").on("input", function() {
     $sub.val($(this).val() + " " + "[" + "Pikzl Contact Form" + "]");
   });
 
+/*---nav height---*/
   var navheight = $('nav').height();
   $('#top-parallax').css('padding-top', navheight+'px');
   $('.page-head').css('padding-top', navheight+'px');
-
+  $('#home, #about, #testimonials, #contact').css('padding-bottom', navheight+'px');
 });
 
-// $(".next").click(function() { //next anchor on click
+/*---next anchor on click---*/
+// $(".next").click(function() {
 //   var topPart = $(window).height() - $(window).height()/100*10;
 //   var a= document.getElementsByTagName('anchor');
 //   for(var i = 0 ; i < a.length ; i++) {
@@ -36,13 +34,14 @@ $(document).ready(function(){
 //   }
 // });
 
+/*--Scroll to top on click--*/
 $(".top").click(function() {
   $('html, body').stop().animate({scrollTop : 0},1000);
 });
 
 
-
-$('a[href^="#"]').on('click', function (e) { //scroll on click
+/*---scroll on click---*/
+$('a[href^="#"]').on('click', function (e) {
     e.preventDefault();
     $(document).off("scroll");
     var target = this.hash,
@@ -61,8 +60,9 @@ $('a[href^="#"]').on('click', function (e) { //scroll on click
 
 
 
+  /*---Stop scroll to next anchor while in about page---*/
 
-  // $("#about").mouseover(function(){ //Stop scroll to next anchor while in about page
+  // $("#about").mouseover(function(){
   //   $(document).unbind('mousewheel DOMMouseScroll');
   // });
   // $("#about").mouseout(function(){

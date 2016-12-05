@@ -3,8 +3,8 @@
 	src: url("fonts/Passion_One/PassionOne-Regular.ttf");
 }
 input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 1000px #ff7043 inset !important;
-		-webkit-text-fill-color: white !important;
+    -webkit-box-shadow: 0 0 0 1000px #fafafa inset !important;
+		-webkit-text-fill-color: #525252 !important;
 }
 
 html {
@@ -49,7 +49,7 @@ nav ul a{
 }
 
 .parallax-container {
-	height: 50vh;
+	height: 100vh;
 }
 .parallax {
 	height: 100%;
@@ -73,14 +73,12 @@ nav ul a{
 
 .negotiator {
 	background-image: url("../images/the-negotiator.png");
-	background-size: cover;
-	height: 50%;
+	background-size: contain;
+	height: 100%;
+	background-repeat: no-repeat;
 }
 
-#home, #about, #testimonials, #contact {
-	margin-bottom: 0;
-	padding-bottom: 5vh;
-}
+
 #about a{
 	color: #ef5350 ;
 	text-decoration: underline;
@@ -113,19 +111,19 @@ p {
 	width: 35%;
 }
 
+h1 {
+  font-size: 2em;
+  /* 2x body copy size = 32px */
+  line-height: 1.25;
+  /* 45px / 36px */
+}
+
 .banner h1 {
 	color: white;
 	text-shadow: 1px 3px 0px rgba(0, 0, 0, 0.2);
 	text-align: left;
 }
-}
-#home h1{
-	color: #525252;
-}
 
-h2{
-	font-size: 2rem;
-}
 .banner h2{
 	text-shadow: 1px 3px 0px rgba(0, 0, 0, 0.2);
 	text-align: left;
@@ -135,14 +133,32 @@ h1, h2, h3 {
 	color: #ef5350  ;
   text-align: center;
 }
+h2 {
+  font-size: 1.625em;
+  /* 1.625x body copy size = 26px */
+  line-height: 1.15384615;
+  /* 30px / 26px */
+}
 h3{
 	font-size: 1.8rem;
 	color: #525252;
 	margin-bottom: 0;
 }
 
+/* Testimonials*/
+.testimonial {
+	font-style: italic;
+}
+.focus {
+	font-weight: bold;
+	color: #ef5350;
+}
+.customer {
+	font-weight: bold;
+	text-align: center;
+}
 
-/* Form CSS*/
+/* Form*/
 form {
 	font-family: "Roboto", sans-serif;
 }
@@ -170,17 +186,21 @@ form {
 }
 /* valid color */
 .input-field input[type=text].valid, .input-field input[type=email].valid, .input-field input[type=tel].valid, #textarea1.valid{
-	border-bottom: 1px solid white;
-	box-shadow: 0 1px 0 0 white;
+	border-bottom: 1px solid #a5d6a7;
+	box-shadow: 0 1px 0 0 #a5d6a7;
 }
 /* invalid color */
 .input-field input[type=text].invalid, .input-field input[type=email].invalid, .input-field input[type=tel].invalid, #textarea1.invalid {
-	border-bottom: 1px solid #ff5722;
-	box-shadow: 0 1px 0 0 #ff5722;
+	border-bottom: 1px solid #ef5350;
+	box-shadow: 0 1px 0 0 #ef5350;
 }
 /* icon prefix focus color */
 .input-field .prefix.active {
 	color: #ef5350 ;
+}
+/*Dropdown label*/
+.dropdown-content li>a, .dropdown-content li>span {
+	color: #ef5350;
 }
 
 /*footer*/
@@ -196,4 +216,37 @@ footer.page-footer {
 }
 footer .container {
 	line-height: 5vh;
+}
+
+
+/* Tablet Large */
+@media (min-width: 43.75em) {
+  h1 {
+    font-size: 2.5em;
+    /* 2.5x body copy size = 40px */
+    line-height: 1.125;
+  }
+	h2 {
+    font-size: 2em;
+    /* 2x body copy size = 32px */
+    line-height: 1.25;
+  }
+	.parallax-container{
+		height: 37vh;
+	}
+}
+/* Desktop */
+@media (min-width: 56.25em) {
+  h1 {
+    font-size: 3em;
+    /* 3x body copy size = 48px */
+    line-height: 1.05;
+    /* keep to a multiple of the 20px line height
+    and something more appropriate for display headings */
+  }
+	h2 {
+    font-size: 2.25em;
+    /* 2.25x body copy size = 36px */
+    line-height: 1.25;
+  }
 }
