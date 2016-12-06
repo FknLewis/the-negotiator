@@ -2,20 +2,29 @@ $(document).ready(function(){
   /*onescroll();*/ //Enable smooth scroll
   $('.parallax').parallax();  //initialize parallax
   $('select').material_select(); //initialize dropdown
+  $(".button-collapse").sideNav({
+    draggable: true,
+    closeOnClick: true
+  }); //mobile menu
 
 /*---Subject for email---*/
   var $sub = $("#_subject");
   $("#name").on("input", function() {
-    $sub.val($(this).val() + " " + "[" + "Pikzl Contact Form" + "]");
+    $sub.val($(this).val() + " " + "[" + "Negotiator Contact Form" + "]");
   });
 
 /*---nav height---*/
-  var navheight = $('nav').height();
-  $('#top-parallax').css('padding-top', navheight+'px');
-  $('.page-head').css('padding-top', navheight+'px');
-  $('#home, #about, #testimonials, #contact').css('padding-bottom', navheight+'px');
+  navPadding();
+  setFixed('.parallax-container .container');
 });
+$(window).scroll(function(){
+  setFixed(".parallax-container .container");
+})
 
+/*---parallax height---*/
+if($(window).width() > 1024){
+  $('.parallax-container').css('height', $('#banner-text').height() + 100 );
+}
 /*---next anchor on click---*/
 // $(".next").click(function() {
 //   var topPart = $(window).height() - $(window).height()/100*10;
@@ -68,7 +77,22 @@ $('a[href^="#"]').on('click', function (e) {
   // $("#about").mouseout(function(){
   //   $(document).bind('mousewheel DOMMouseScroll', onescroll());
   // });
-
+function navPadding(){
+  var navheight = $('nav').height();
+  $('#top-parallax').css('padding-top', navheight-3+'px');
+  $('.page-head').css('padding-top', navheight-3+'px');
+  $('#home, #about, #testimonials, #contact').css('padding-bottom', navheight+'px');
+}
+function setFixed(elem){
+  var position = $(window).scrollTop();
+  var elemHeight = $(elem).height();
+  if(position > elemHeight){
+    $(elem).css('position', 'relative');
+  }
+  else {
+    $(elem).css('position', 'fixed');
+  }
+}
 function onescroll(){ //scroll to next anchor
   var delay = false;
   $(document).on('mousewheel DOMMouseScroll', function(event) {

@@ -10,7 +10,13 @@ input:-webkit-autofill {
 html {
 	color: #525252;
 	font-family: 'Passion One', cursive;
+<<<<<<< HEAD
 	height: 100%;
+=======
+}
+body{
+	background-color: #ef5350;
+>>>>>>> 5b3be36a0db04a4cf2b5f0a7ba88a070807fdb90
 }
 
 nav{
@@ -25,6 +31,14 @@ nav .container {
 nav ul a{
 	font-size: 1.3rem;
 }
+#sidenav-overlay {
+	z-index: 0;
+}
+.side-nav a {
+	text-shadow: none;
+	color: #ef5350;
+}
+
 
 /*.next {
 	font-size: 40px;
@@ -49,9 +63,7 @@ nav ul a{
 	width: 100%;
 }
 
-.parallax-container {
-	height: 100vh;
-}
+
 .parallax {
 	height: 100%;
 	background-color: #ef5350 ;
@@ -75,8 +87,9 @@ nav ul a{
 .negotiator {
 	background-image: url("../images/the-negotiator.png");
 	background-size: contain;
-	height: 100%;
+	height: 65%;
 	background-repeat: no-repeat;
+	width: 100%;
 }
 
 
@@ -213,12 +226,20 @@ footer.page-footer {
 	margin-top: 0;
 	padding-top: 0;
 	height: 5vh;
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: #212121;
 }
 footer .container {
 	line-height: 5vh;
 }
 
+footer a {
+	color: white;
+	font-weight: bold;
+}
+
+footer .container {
+	width: 90%;
+}
 
 /* Tablet Large */
 @media (min-width: 43.75em) {
@@ -250,4 +271,201 @@ footer .container {
     /* 2.25x body copy size = 36px */
     line-height: 1.25;
   }
+}
+
+
+/* ----------- iPad ----------- */
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px){
+		#banner-text h1{
+			margin: 0 0 1.68rem 0;
+		}
+		#banner-text{
+			width: 60%;
+		}
+		#banner-image{
+			width: 40%;
+		}
+		.negotiator {
+			height: 80%;
+		}
+		nav .material-icons {
+			margin-left: 1vh;
+		}
+}
+
+/* ----------- Nexus 5 ----------- */
+/* Landscape */
+@media only screen
+  and (min-device-width: 360px)
+  and (max-device-width: 529px)
+	and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 1) {
+		#banner-text h1{
+			margin: 0 0 1.68rem 0;
+		}
+		#banner-text{
+			width: 60%;
+		}
+		#banner-image{
+			width: 40%;
+		}
+		.negotiator {
+			height: 80%;
+		}
+}
+
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1) {
+		.parallax-container {
+			height: 27vh;
+		}
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 1) {
+		.brand-logo{
+			margin-left: 1vw;
+		}
+}
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+		#banner-text h1, #banner-text h2{
+			margin: 0;
+		}
+		form .container {
+			width: 90%;
+			margin-left: 0;
+		}
+}
+
+/* ----------- iPhone 6 ----------- */
+/* Portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+		.parallax-container {
+			height: 70vh;
+		}
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+		.parallax-container {
+			height: 58vh;
+		}
+}
+
+/* ----------- iPhone 6+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+		.parallax-container {
+			height: 55vh;
+		}
+		.negotiator {
+			height: 50%;
+			background-position: 50%;
+		}
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
+		#banner-text h1{
+			margin: 0 0 1.68rem 0;
+		}
+		#banner-text{
+			width: 60%;
+		}
+		#banner-image{
+			width: 40%;
+		}
+		.negotiator {
+			height: 80%;
+			background-position: 50%;
+		}
+		.parallax-container {
+			height: 60vh;
+		}
+}
+
+/* ----------- iPhone 5 and 5S ----------- */
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+		#banner-text h1{
+			margin: 0 0 1.68rem 0;
+		}
+		.negotiator {
+			background-position: 50%;
+			height: 50%;
+		}
+		.parallax-container {
+			height: 70vh;
+		}
+}
+/* Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+		#banner-text{
+			width: 60%;
+		}
+		#banner-image{
+			width: 40%;
+		}
+		.negotiator {
+			height: 80%;
+			background-position: 50%;
+		}
+		.parallax-container {
+			height: 100vh;
+		}
+		#home img{
+			width: 25%;
+		}
 }
