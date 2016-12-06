@@ -10,6 +10,12 @@ input:-webkit-autofill {
 html {
 	color: #525252;
 	font-family: 'Passion One', cursive;
+	height: 100%;
+	overflow: hidden;
+}
+body{
+	height: 100%;
+	overflow: auto;
 }
 
 nav{
