@@ -12,6 +12,7 @@ html {
 	font-family: 'Passion One', cursive;
 }
 body{
+	background-color: #ef5350;
 }
 
 nav{
@@ -221,7 +222,7 @@ footer.page-footer {
 	margin-top: 0;
 	padding-top: 0;
 	height: 5vh;
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: #212121;
 }
 footer .container {
 	line-height: 5vh;

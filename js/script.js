@@ -10,7 +10,7 @@ $(document).ready(function(){
 /*---Subject for email---*/
   var $sub = $("#_subject");
   $("#name").on("input", function() {
-    $sub.val($(this).val() + " " + "[" + "Pikzl Contact Form" + "]");
+    $sub.val($(this).val() + " " + "[" + "Negotiator Contact Form" + "]");
   });
 
 /*---nav height---*/
