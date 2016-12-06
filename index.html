@@ -28,12 +28,19 @@
         <div class="nav-wrapper">
           <div class="container">
             <a href="#top" class="brand-logo">THE NEGOTIATOR</a>
+            <a href="" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
               <li><a href="#home">WHO</a></li>
               <li><a href="#about">ABOUT</a></li>
               <li><a href="#testimonials">TESTIMONIALS</a></li>
               <li><a href="#contact">CONTACT</a></li>
             </ul>
+            <ul class="side-nav" id="mobile-demo">
+              <li><a href="#home">WHO</a></li>
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#testimonials">TESTIMONIALS</a></li>
+              <li><a href="#contact">CONTACT</a></li>
+           </ul>
           </div>
         </div>
       </nav>
@@ -43,11 +50,11 @@
          <div class="parallax"></div>
           <div class="container">
             <div class="row banner">
-              <div class="col s12 m8">
+              <div class="col l8" id="banner-text">
                 <h1>Buying a house or car, or have an ongoing claim or complaint?</h1>
                 <h2>You could be thousands of pounds better off by calling in The Negotiator.</h2>
               </div>
-              <div class="col s12 m4 negotiator">
+              <div class="col l4 negotiator" id="banner-image">
               </div>
             </div>
           </div>
@@ -186,12 +193,12 @@
                 </div>
                 <div class="input-field col s12 l6">
                   <i class="material-icons prefix">work</i>
-                  <select>
-                    <option value="" disabled selected>Type of Deal..</option>
-                    <option value="1">Car</option>
-                    <option value="2">House</option>
-                    <option value="3">Claim / Complaint</option>
-                    <option value="4">Other</option>
+                  <select name="Type of Deal:">
+                    <option value="None Selected" disabled selected>Type of Deal..</option>
+                    <option value="Car">Car</option>
+                    <option value="House">House</option>
+                    <option value="Claim">Claim / Complaint</option>
+                    <option value="Other">Other</option>
                   </select>
                 </div>
               </div>
@@ -206,7 +213,7 @@
 
               <div class="row center" style="padding:5vh 0 5vh 0">
                 <div class="col s12">
-                  <button class="btn waves-effect waves-light  red" type="submit">Submit
+                  <button class="btn waves-effect waves-light  red lighten-1" type="submit">Submit
                     <i class="material-icons right">send</i>
                   </button>
                 </div>
@@ -220,7 +227,12 @@
       <footer class="page-footer">
         <div class="footer-copyright">
           <div class="container">
-            Copyright &copy; 2016 Pikzl.co
+            <div class="col s6 left">
+              &copy; 2016 The Negotiator
+            </div>
+            <div class="col s6 right">
+              Design by <a href="www.pikzl.co">PIKZL</a>
+            </div>
           </div>
         </div>
       </footer>
