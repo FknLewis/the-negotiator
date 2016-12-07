@@ -10,13 +10,10 @@ input:-webkit-autofill {
 html {
 	color: #525252;
 	font-family: 'Passion One', cursive;
-<<<<<<< HEAD
 	height: 100%;
-=======
 }
 body{
 	background-color: #ef5350;
->>>>>>> 5b3be36a0db04a4cf2b5f0a7ba88a070807fdb90
 }
 
 nav{
@@ -85,7 +82,7 @@ nav ul a{
 }
 
 .negotiator {
-	background-image: url("../images/the-negotiator.png");
+	background-image: url("../images/the-negotiator-min.png");
 	background-size: contain;
 	height: 65%;
 	background-repeat: no-repeat;
