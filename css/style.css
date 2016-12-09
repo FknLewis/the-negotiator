@@ -25,6 +25,7 @@ nav{
 }
 nav .container {
 	width: 100%;
+	max-width: 100%;
 }
 nav ul a{
 	font-size: 1.3rem;
@@ -296,7 +297,18 @@ footer .container {
 	#banner-text h2 {
 		font-size: 2em;
 	}
+	h1{
+		font-size: 3em;
+	}
+	h2{
+		font-size: 2em;
+	}
+	form .container {
+		width: 80%;
+		margin-left: 10%;
+	}
 }
+
 /* Horizontal Tablet Menu */
 @media screen and (min-width: 993px){
 	nav .container {

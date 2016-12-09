@@ -60,7 +60,7 @@ $('a[href^="#"]').on('click', function (e) {
     }
     else{
       $('html, body').stop().animate({
-          'scrollTop': $target.offset().top
+          'scrollTop': $target.offset().top-$('nav').height()/2
       }, 1000, 'swing', function () {
       });
     }
