@@ -15,15 +15,15 @@ $(document).ready(function(){
 
 /*---nav height---*/
   navPadding();
-  setFixed('.parallax-container .container');
+  setFixed('#banner-container .container');
 });
 $(window).scroll(function(){
-  setFixed(".parallax-container .container");
+  setFixed("#banner-container .container");
 })
 
 /*---parallax height---*/
 if($(window).width() > 1024){
-  $('.parallax-container').css('height', $('#banner-text').height() + 100 );
+  $('#banner-container').css('height', $('#banner-text').height() + 100 );
 }
 /*---next anchor on click---*/
 // $(".next").click(function() {
@@ -79,8 +79,8 @@ $('a[href^="#"]').on('click', function (e) {
   // });
 function navPadding(){
   var navheight = $('nav').height();
-  $('#top-parallax').css('padding-top', navheight-3+'px');
-  $('.page-head').css('padding-top', navheight-3+'px');
+  $('#top-parallax').css('padding-top', navheight/2 + 'px');
+  $('.page-head').css('padding-top', navheight/2 + 'px');
   $('#home, #about, #testimonials, #contact').css('padding-bottom', navheight+'px');
 }
 function setFixed(elem){
