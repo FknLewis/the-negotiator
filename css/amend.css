@@ -83,6 +83,7 @@ nav ul a{
 
 #banner-text {
 	width: 60%;
+  float: right;
 }
 #banner-text h1{
 	font-size: 20px;
@@ -91,13 +92,14 @@ nav ul a{
 	font-size: 16px;
 }
 #banner-text h1, #banner-text h2{
+  margin-right: 2%;
 	text-align: right;
 }
 #banner-image {
 	width: 75%;
 	position: absolute;
 	top: 25px;
-	left: 50%;
+  right: 45%;
 	z-index: -1;
 }
 
@@ -111,7 +113,6 @@ nav ul a{
 	color: #ef5350 ;
 	text-decoration: underline;
 }
-
 
 .page-head p {
 	text-align: center;
@@ -129,9 +130,10 @@ nav ul a{
 }
 
 p {
-  text-align: justify;
+  text-align: justify;;
 	font-family: "Roboto", sans-serif;
 }
+
 #home {
 	text-align: center;
 	margin-top: 250px;
@@ -264,7 +266,7 @@ footer .container {
 @media screen and (min-width: 450px){
 	#banner-image {
 		width: 35%;
-		left: 70%;
+		right: 70%;
 		top: 10%;
 	}
 	#banner-text h1 {
@@ -313,4 +315,7 @@ footer .container {
 	nav .container {
 		width: 80%;
 	}
+  html {
+    font-size: 16px;
+  }
 }

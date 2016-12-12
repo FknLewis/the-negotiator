@@ -79,7 +79,7 @@ $('a[href^="#"]').on('click', function (e) {
   // });
 function navPadding(){
   var navheight = $('nav').height();
-  $('#top-parallax').css('padding-top', navheight/2 + 'px');
+  $('#banner').css('padding-top', navheight/2 + 'px');
   $('.page-head').css('padding-top', navheight/2 + 'px');
   $('#home, #about, #testimonials, #contact').css('padding-bottom', navheight+'px');
 }
