@@ -21,7 +21,7 @@ body{
 nav{
 	z-index: 1;
   position: fixed;
-	background-color: #ef5350 ;	text-shadow: 1px 3px 0px rgba(0, 0, 0, 0.2)
+	background-color: #ef5350 ;	text-shadow: 1px 3px 0px rgba(0, 0, 0, 0.2);
 }
 
 nav ul a{
@@ -83,21 +83,23 @@ nav ul a{
 
 #banner-text {
 	width: 60%;
+  float: right;
 }
 #banner-text h1{
-	font-size: 20px;
+	font-size: 19px;
 }
 #banner-text h2{
 	font-size: 16px;
 }
 #banner-text h1, #banner-text h2{
+  margin-right: 2%;
 	text-align: right;
 }
 #banner-image {
 	width: 75%;
 	position: absolute;
 	top: 25px;
-	left: 50%;
+  right: 45%;
 	z-index: -1;
 }
 
@@ -111,7 +113,6 @@ nav ul a{
 	color: #ef5350 ;
 	text-decoration: underline;
 }
-
 
 .page-head p {
 	text-align: center;
@@ -129,15 +130,35 @@ nav ul a{
 }
 
 p {
-  text-align: justify;
+  text-align: justify;;
 	font-family: "Roboto", sans-serif;
+}
+.about-section {
+	margin-top: 5vh;
+}
+#help-on {
+	text-align: center;
+	padding-top: 5vh;
+}
+#help-on-icon {
+	width: 100px;
+	height: 100px;
+	background-color: #ef5350;
+	border-radius: 50%;
+	margin: auto;
+}
+#help-on-icon i {
+	font-size: 4em;
+	color: white;
+	line-height: 100px;
 }
 #home {
 	text-align: center;
 	margin-top: 250px;
 }
 #home img{
-	width: 35%;
+	width: 100px;
+	height: 100px;
 }
 
 h1 {
@@ -264,7 +285,7 @@ footer .container {
 @media screen and (min-width: 450px){
 	#banner-image {
 		width: 35%;
-		left: 70%;
+		right: 70%;
 		top: 10%;
 	}
 	#banner-text h1 {
@@ -275,9 +296,6 @@ footer .container {
 	}
 	#home {
 		margin-top: 220px;
-	}
-	#home img{
-		width: 100px;
 	}
 }
 /* Tablet / Desktop */
@@ -302,6 +320,7 @@ footer .container {
 	h2{
 		font-size: 2em;
 	}
+
 	form .container {
 		width: 80%;
 		margin-left: 10%;
@@ -312,5 +331,11 @@ footer .container {
 @media screen and (min-width: 993px){
 	nav .container {
 		width: 80%;
+	}
+  html {
+    font-size: 16px;
+  }
+	.about-section {
+		margin-top: 0;
 	}
 }
