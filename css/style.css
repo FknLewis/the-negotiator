@@ -2,6 +2,10 @@
 	font-family: Passion One;
 	src: url("fonts/Passion_One/PassionOne-Regular.ttf");
 }
+@font-face {
+	font-family: The Frontman;
+	src: url("fonts/The Frontman.ttf");
+}
 
 
 input:-webkit-autofill {
@@ -23,9 +27,15 @@ nav{
   position: fixed;
 	background-color: #ef5350 ;	text-shadow: 1px 3px 0px rgba(0, 0, 0, 0.2);
 }
-
+nav .brand-logo{
+	font-family: The Frontman;
+	font-size: 1.2rem;
+}
 nav ul a{
 	font-size: 1.3rem;
+}
+nav .button-collapse i{
+	font-size: 2.1rem;
 }
 #sidenav-overlay {
 	z-index: 0;
@@ -290,9 +300,11 @@ footer .container {
 	}
 	#banner-text h1 {
 		font-size: 2em;
+		margin-bottom: 0;
 	}
 	#banner-text h2 {
 		font-size: 1.25em;
+		margin-top: 0;
 	}
 	#home {
 		margin-top: 220px;
@@ -302,6 +314,9 @@ footer .container {
 @media screen and (min-width: 767px){
 	#home {
 		margin-top: 325px;
+	}
+	nav .brand-logo{
+		font-size: 1.7rem;
 	}
 	#banner-image {
 		width: 40%;
