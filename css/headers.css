@@ -326,10 +326,10 @@ footer .container {
 		max-width: 350px;
 	}
 	#banner-text h1 {
-		font-size: 3em;
+		font-size: 2.7em;
 	}
 	#banner-text h2 {
-		font-size: 2em;
+		font-size: 1.7em;
 	}
 	h1{
 		font-size: 3em;
@@ -354,5 +354,15 @@ footer .container {
   }
 	.about-section {
 		margin-top: 0;
+	}
+}
+
+/* Large Desktop */
+@media screen and (min-width: 1280px){
+	#banner-text h1 {
+		font-size: 3em;
+	}
+	#banner-text h2 {
+		font-size: 2em;
 	}
 }
